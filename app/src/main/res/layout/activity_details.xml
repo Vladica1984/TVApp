@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".activity.DetailsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/iv_detail_image"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="2" />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="5" >
+
+            <ImageView
+                android:id="@+id/iv_detail_background"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:alpha="0.3" />
+
+            <TextView
+                android:id="@+id/tv_details_movie_name"
+                android:layout_width="wrap_content"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:hint="@string/movie_name"
+                android:textColor="#000"
+                android:textStyle="bold"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/tv_details_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/tv_details_movie_name"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="30dp"
+                android:hint="@string/description"
+                android:textColor="#000"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/tv_details_description"
+                android:layout_alignTop="@+id/tv_details_actor"
+                android:layout_marginEnd="10dp"
+                android:text="Actors:"
+                android:textColor="@color/background_gradient_start"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tv_details_actor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_details_description"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="10dp"
+                android:layout_toRightOf="@+id/textView"
+                android:hint="@string/actors"
+                android:textColor="@color/background_gradient_start"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/button_imdb"
+                android:layout_width="150sp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:drawableStart="@drawable/ic_movies"
+                android:drawableTint="@color/yellow"
+                android:text="@string/imdb"
+                android:backgroundTint="@color/background_gradient_start"
+                android:textAllCaps="false"
+                android:textSize="20sp"
+                android:textColor="@color/yellow"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/button_play"
+                android:layout_width="150sp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:drawableStart="@drawable/ic_play"
+                android:drawableTint="@color/yellow"
+                android:text="@string/play"
+                android:textColor="@color/yellow"
+                android:textSize="20sp"
+                android:textAllCaps="false"
+                android:backgroundTint="@color/background_gradient_start"
+                android:fontFamily="sans-serif-condensed"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

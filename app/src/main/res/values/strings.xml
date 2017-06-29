@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">TVApp</string>
+    <string name="movie_name">Movie name</string>
+    <string name="description">Description</string>
+    <string name="actors">Actors</string>
+    <string name="imdb">IMDb</string>
+    <string name="play">Play trailer</string>
+</resources>
